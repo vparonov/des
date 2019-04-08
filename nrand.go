@@ -14,6 +14,6 @@ func NewNormalRandGenerator(seed int64) RandomNumberGenerator {
 	}
 }
 
-func (nrg normalRandGenerator) Next() float64 {
+func (nrg *normalRandGenerator) Next() float64 {
 	return nrg.rg.Float64()
 }
