@@ -16,7 +16,7 @@ type Histogram struct {
 
 //NewHistogram - ......
 func NewHistogram(slots int, minValue, maxValue float64) *Histogram {
-	delta := ((maxValue - minValue) / float64(slots-1))
+	delta := ((	maxValue - minValue) / float64(slots-1))
 	return &Histogram{
 		slots:    slots,
 		minValue: minValue,
